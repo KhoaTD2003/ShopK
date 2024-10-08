@@ -8,22 +8,15 @@ import lombok.Setter;
 
 import java.util.UUID;
 
-@Table(name = "ChatLieu")
-@Entity
+@NoArgsConstructor
+@AllArgsConstructor
 @Getter
 @Setter
-@AllArgsConstructor
-@NoArgsConstructor
+@Entity
+@Table(name = "ChatLieu")
 public class ChatLieu {
-
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     @Column(name = "id")
     private UUID id;
-
-    @Column(name = "ma")
-    private String ma;
-
-    @Column(name = "ten")
-    private  String ten;
 }
